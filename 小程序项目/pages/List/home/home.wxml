@@ -1,0 +1,12 @@
+<!--pages/List/home/home.wxml-->
+<view class='main'>
+  <view class="complete">未完成</view>
+  <view class='list' wx:for="{{items}}" wx:key='id'>
+    <navigator url="ListInfo?id={item.id}}" hover-class='navigator-hover'>
+      <text class='list_title'>{{item.title}}</text>
+      <text class='list_time'>{{item.time}}</text>
+      <text class='list_imp'>{{item.imp}}</text>
+      <text class='list_typ'>{{item.typ}}</text>
+    </navigator>
+  </view>
+</view>

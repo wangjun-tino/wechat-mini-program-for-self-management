@@ -1,0 +1,42 @@
+Page({
+  data:{},
+  formSubmit:function(e){
+    if (e.detail.value.password == e.detail.value.re_password){
+      wx.request({
+        url:'',//地址
+        data:{
+          'token':getApp().globalData.userInfo.dev_token,
+          'username':e.detail.value.username,
+          'password':e.detail.value.password
+        },
+        method:"POST",
+        header:{
+          'content-type':'application/x-www-form-urlencoded'
+        },
+        success:function(res){
+          if(res.data.status==1){
+            wx.showToast({
+              title:res.data.message+',请返回登录。',
+              icon:'success',
+              duration:2000
+            })
+          }
+          else{
+            wx.showToast({
+              title:res.data.message,
+              icon:'loading',
+              duration:2000
+            })
+          }
+        }
+      })
+    }
+    else{
+      wx.showToast({
+        title:'两次输入密码不一致,请检查。',
+        icon:'loading',
+        duration:2000
+      })
+    }
+  },
+})

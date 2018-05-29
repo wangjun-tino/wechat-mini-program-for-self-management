@@ -1,0 +1,15 @@
+/**index.wxss**/
+.main{
+  background:#7AC5CD;
+  width:100%;
+  height:1208rpx;
+}
+.main_logo{
+  padding-right:2%;
+  padding-top:1040rpx;
+}
+.main_text{
+  font-size:80rpx;
+  color:white;
+  float:right;
+}

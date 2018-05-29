@@ -1,0 +1,17 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/user/index/index",
+    "pages/user/login/login",
+    "pages/user/register/register",
+    "pages/List/home/home",
+    "pages/List/ListInfo/ListInfo"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#7AC5CD",
+    "navigationBarTitleText": "Lists",
+    "navigationBarTextStyle": "white"
+  }
+}

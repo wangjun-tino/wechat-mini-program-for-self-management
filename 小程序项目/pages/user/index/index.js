@@ -1,0 +1,13 @@
+Page({
+  data:{},
+  //请求登陆API
+  onLoad:function(options){
+    wx.request({
+      url:'',//接口地址
+      data:{},
+      method:'POST',
+      header:{},
+      success:function(res){console.log(res.data)}
+    })
+  }
+})

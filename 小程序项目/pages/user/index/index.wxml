@@ -1,0 +1,2 @@
+<!--pages/user/index/index.wxml-->
+<image class='load_pic' src='../index/loading.gif'></image>
